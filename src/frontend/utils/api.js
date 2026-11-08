@@ -265,7 +265,8 @@ export const createLiveSocket = (subscribe, handlers = {}, apiIndex = 0, serverI
 
 export const getFlagRegionCode = (region) => {
   const code = (region || '').toUpperCase()
-  if (code === 'TW') return 'cn'
+  // 恢复🇹🇼
+  // if (code === 'TW') return 'cn'
   return code.toLowerCase()
 }
 

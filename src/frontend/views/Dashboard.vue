@@ -1263,9 +1263,10 @@ const drawMarkers = () => {
   for (const code in regionStats.value) {
     const upperCode = code.toUpperCase()
     activeIso2[upperCode] = true
-    if (upperCode === 'HK' || upperCode === 'TW' || upperCode === 'MO') {
-      activeIso2['CN'] = true
-    }
+    // 恢复🇹🇼
+    // if (upperCode === 'HK' || upperCode === 'TW' || upperCode === 'MO') {
+    //   activeIso2['CN'] = true
+    // }
   }
 
   geoJsonLayer = window.L.geoJSON(window.worldGeoJson, {
